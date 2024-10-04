@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Vue statique pour le Compte de Résultat -->
+        <record id="views_crn" model="ir.ui.view">
+            <field name="name">static.page.crn.view</field>
+            <field name="model">ir.ui.view</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <h1>SOCIETE HAVANANA TECH</h1>
+                        <p>S.A.R.L au capital de MGA 1 000.000</p>
+                        <p>ANTANANARIVO</p>
+                        <h2>COMPTE DE RESULTAT 01/01/2024 AU 31/12/2024</h2>
+                        <p>Unité monétaire : ARIARY</p>
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>N° DE COMPTE</th>
+                                    <th>NOTES</th>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Compte de résultat rows -->
+                                <tr>
+                                    <td>707000</td>
+                                    <td>Chiffre d'affaires</td>
+                                    <td>27 205 880,00</td>
+                                    <td>76 539 946,00</td>
+                                    <td>199 730 500,00</td>
+                                    <td>119 535 100,00</td>
+                                    <td>42 528 574,44</td>
+                                    <td>256 911 462,10</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Production stockée</td>
+                                    <td colspan="6">-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Production immobilisée</td>
+                                    <td colspan="6">-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>I - Production de l'exercice</td>
+                                    <td>27 205 880,00</td>
+                                    <td>76 539 946,00</td>
+                                    <td>199 730 500,00</td>
+                                    <td>119 535 100,00</td>
+                                    <td>42 528 574,44</td>
+                                    <td>256 911 462,10</td>
+                                </tr>
+                                <tr>
+                                    <td>607000</td>
+                                    <td>Achats consommés</td>
+                                    <td>23 844 166,95</td>
+                                    <td>66 971 032,00</td>
+                                    <td>179 292 080,00</td>
+                                    <td>106 940 360,00</td>
+                                    <td>37 950 015,35</td>
+                                    <td>217 722 963,98</td>
+                                </tr>
+                                <tr>
+                                    <td>61-62</td>
+                                    <td>Services extérieurs et autres consommations</td>
+                                    <td>5 744 414,09</td>
+                                    <td>11 188 723,56</td>
+                                    <td>9 535 243,44</td>
+                                    <td>5 218 958,96</td>
+                                    <td>2 559 360,17</td>
+                                    <td>8 353 075,44</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>II - Consommations de l'exercice</td>
+                                    <td>29 588 581,04</td>
+                                    <td>78 159 755,56</td>
+                                    <td>188 827 323,44</td>
+                                    <td>112 159 318,96</td>
+                                    <td>40 509 375,52</td>
+                                    <td>226 076 039,42</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>III - VALEUR AJOUTEE D'EXPLOITATION (I-II)</td>
+                                    <td>- 2 382 701,04</td>
+                                    <td>- 1 619 809,56</td>
+                                    <td>10 903 176,56</td>
+                                    <td>7 375 781,04</td>
+                                    <td>2 019 198,92</td>
+                                    <td>30 835 422,68</td>
+                                </tr>
+                                <tr>
+                                    <td>64</td>
+                                    <td>Charges de personnel (A)</td>
+                                    <td>1 285 321,43</td>
+                                    <td>1 285 321,43</td>
+                                    <td>1 285 321,43</td>
+                                    <td>1 285 321,43</td>
+                                    <td>1 285 321,43</td>
+                                    <td>1 285 321,43</td>
+                                </tr>
+                                <tr>
+                                    <td>631000</td>
+                                    <td>Impôts, taxes et assimilés</td>
+                                    <td>653 460,00</td>
+                                    <td>677 250,00</td>
+                                    <td>885 100,00</td>
+                                    <td>322 460,00</td>
+                                    <td>207 100,00</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>IV - EXCEDENT BRUT D'EXPLOITATION</td>
+                                    <td>- 4 321 482,47</td>
+                                    <td>- 3 582 380,99</td>
+                                    <td>8 732 755,13</td>
+                                    <td>5 767 999,61</td>
+                                    <td>526 777,49</td>
+                                    <td>29 550 101,25</td>
+                                </tr>
+                                <tr>
+                                    <td>758000</td>
+                                    <td>Autres produits opérationnels</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>254 950,02</td>
+                                </tr>
+                                <tr>
+                                    <td>658000</td>
+                                    <td>Autres charges opérationnelles</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>960 000,00</td>
+                                </tr>
+                                <tr>
+                                    <td>671200</td>
+                                    <td>Pénalité et amendes fiscales</td>
+                                    <td>1 000 000,00</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>681000</td>
+                                    <td>Dotations aux amortissements, aux provisions</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>V - RESULTAT OPERATIONNEL</td>
+                                    <td>- 5 321 482,47</td>
+                                    <td>- 3 582 380,99</td>
+                                    <td>8 732 755,13</td>
+                                    <td>5 767 999,61</td>
+                                    <td>526 777,49</td>
+                                    <td>28 845 051,27</td>
+                                </tr>
+                                <tr>
+                                    <td>760000</td>
+                                    <td>Produits financiers</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>660000</td>
+                                    <td>Charges financières</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>VI - RESULTAT FINANCIER</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>VII - RESULTAT COURANT AVANT IMPOT (V+VI)</td>
+                                    <td>- 5 321 482,47</td>
+                                    <td>- 3 582 380,99</td>
+                                    <td>8 732 755,13</td>
+                                    <td>5 767 999,61</td>
+                                    <td>526 777,49</td>
+                                    <td>28 845 051,27</td>
+                                </tr>
+                                <tr>
+                                    <td>690000</td>
+                                    <td>Impôts sur les bénéfices</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>VIII - RESULTAT NET DE L'EXERCICE (VII-VIII)</td>
+                                    <td>- 5 321 482,47</td>
+                                    <td>- 3 582 380,99</td>
+                                    <td>8 732 755,13</td>
+                                    <td>5 767 999,61</td>
+                                    <td>526 777,49</td>
+                                    <td>28 845 051,27</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Détails des Charges</h3>
+                        <table class="table table-sm table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Code</th>
+                                    <th>Détails</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>613200</td>
+                                    <td>CONTRAT DE DOMICILIATION</td>
+                                </tr>
+                                <tr>
+                                    <td>613300</td>
+                                    <td>LOCATION D'ESPACE</td>
+                                </tr>
+                                <tr>
+                                    <td>613400</td>
+                                    <td>LOCATION DE MATÉRIEL</td>
+                                </tr>
+                                <tr>
+                                    <td>616000</td>
+                                    <td>FRAIS DE BUREAU</td>
+                                </tr>
+                                <tr>
+                                    <td>622000</td>
+                                    <td>FRAIS DE TRANSPORT</td>
+                                </tr>
+                                <tr>
+                                    <td>623000</td>
+                                    <td>FRAIS DE REPRÉSENTATION</td>
+                                </tr>
+                                <tr>
+                                    <td>627000</td>
+                                    <td>FRAIS D'ASSURANCE</td>
+                                </tr>
+                                <tr>
+                                    <td>628000</td>
+                                    <td>FRAIS D'AUDIT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action pour ouvrir la page statique -->
+        <record id="action_crn" model="ir.actions.act_window">
+            <field name="name">CRN</field>
+            <field name="res_model">ir.ui.view</field> 
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="views_crn"/>
+        </record>
+    </data>
+</odoo>

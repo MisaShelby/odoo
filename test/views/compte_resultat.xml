@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Vue Liste des Tâches (Tree view) -->
+        <record id="view_tache_tree" model="ir.ui.view">
+            <field name="name">tache.tree</field>
+            <field name="model">tache</field>
+            <field name="arch" type="xml">
+                <tree string="Liste des Tâches">
+                    <field name="nom_tache"/>
+                    <field name="date_debut_tache"/>
+                    <field name="duree_tache"/>
+                    <field name="status_tache"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Vue Détails de la Tâche (Form view) -->
+        <record id="view_tache_form" model="ir.ui.view">
+            <field name="name">tache.form</field>
+            <field name="model">tache</field>
+            <field name="arch" type="xml">
+                <form string="Détails de la Tâche">
+                    <sheet>
+                        <group>
+                            <field name="nom_tache"/>
+                            <field name="date_debut_tache"/>
+                            <field name="duree_tache"/>
+                            <field name="status_tache"/>
+                        </group>
+                        <footer>
+                            <button name="action_valider" type="object" string="Valider" class="btn-primary" states="draft"/>
+                            <button string="Annuler" class="btn-secondary" special="cancel"/>
+                            <button string="Enregistrer" class="btn-secondary" type="object" name="write"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action pour ouvrir la liste des tâches -->
+        <record id="action_tache" model="ir.actions.act_window">
+            <field name="name">Gestion des Tâches</field>
+            <field name="res_model">tache</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_tache_tree"/>
+        </record>
+
+        
+
+        <!-- Vue pour CRN12 -->
+       <record id="views_crn12" model="ir.ui.view">
+    <field name="name">crn12.view</field>
+    <field name="model">annee</field>
+    <field name="arch" type="xml">
+        <form string="Compte de Résultat">
+            <sheet>
+                <h1>SOCIETE HAVANANA TECH</h1>
+                <p>S.A.R.L au capital de MGA 1 000.000</p>
+                <p>ANTANANARIVO</p>
+                <group>
+                    <field name="annee_select" widget="selection" options="{'no_create': True}"/>
+                </group>
+                <h2>COMPTE DE RESULTAT 01/01/<field name="annee_select"/> AU 31/12/<field name="annee_select"/></h2>
+                <p>Unité monétaire : ARIARY</p>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>N° DE COMPTE</th>
+                            <th>NOTES</th>
+                            <th><field name="annee_select"/></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>707000</td>
+                            <td>Chiffre d'affaires</td>
+                            <td>
+                                <field name="account_financial_report_income0" widget="many2one" options="{'no_create': True}"/>
+                            </td>
+                        </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Production stockée</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Production immobilisée</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>I - Production de l'exercice</td>
+                                    <td>722 451 462,54</td>
+                                </tr>
+                                <tr>
+                                    <td>607000</td>
+                                    <td>Achats consommés</td>
+                                    <td>632 720 618,28</td>
+                                </tr>
+                                <tr>
+                                    <td>61-62</td>
+                                    <td>Services extérieurs et autres consommations</td>
+                                    <td>42 599 775,66</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>II - Consommations de l'exercice</td>
+                                    <td>675 320 393,94</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>III - VALEUR AJOUTEE D'EXPLOITATION (I-II)</td>
+                                    <td>47 131 068,60</td>
+                                </tr>
+                                <tr>
+                                    <td>64</td>
+                                    <td>Charges de personnel (A)</td>
+                                    <td>7 711 928,57</td>
+                                </tr>
+                                <tr>
+                                    <td>631000</td>
+                                    <td>Impôts, taxes et assimilés</td>
+                                    <td>2 745 370,00</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>IV - EXCEDENT BRUT D'EXPLOITATION</td>
+                                    <td>36 673 770,04</td>
+                                </tr>
+                                <tr>
+                                    <td>758000</td>
+                                    <td>Autres produits opérationnels</td>
+                                    <td>254 950 02</td>
+                                </tr>
+                                <tr>
+                                    <td>658000</td>
+                                    <td>Autres charges opérationnelles</td>
+                                    <td>1 000 000,00</td>
+                                </tr>
+                                <tr>
+                                    <td>681000</td>
+                                    <td>Dotations aux amortissements, aux provisions</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>V - RESULTAT OPERATIONNEL</td>
+                                    <td>34 968 720,06</td>
+                                </tr>
+                                <tr>
+                                    <td>760000</td>
+                                    <td>Produits financiers</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>660000</td>
+                                    <td>Charges financières</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>VI - RESULTAT FINANCIER</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>VII - RESULTAT AVANT IMPOTS (V + VI)</td>
+                                    <td>34 968 720,06</td>
+                                </tr>
+                                <tr>
+                                    <td>695000</td>
+                                    <td>Impôts exigibles sur résultats</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>TOTAL DES PRODUITS DES ACTIVITES ORDINAIRES</td>
+                                    <td>722 706 412,56</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>TOTAL DES CHARGES DES ACTIVITES ORDINAIRES</td>
+                                    <td>687 737 692,51</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>VIII - RESULTAT NET DES ACTIVITES ORDINAIRES</td>
+                                    <td>34 968 720,06</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>IX - RESULTAT EXTRAORDINAIRE</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>X - RESULTAT NET DE L'EXERCICE</td>
+                                    <td>34 968 720,06</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action pour ouvrir la page CRN12 -->
+        <record id="action_crn12" model="ir.actions.act_window">
+            <field name="name">CRN12</field>
+            <field name="res_model">annee</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="views_crn12"/>
+        </record>
+        
+        
+        <!-- Menu principal du module -->
+        <menuitem id="module_perso_menu_root" name="Mon Module Perso" sequence="10"/>
+
+        <!-- Menu for accessing the list of tasks -->
+        <menuitem id="menu_tache" name="Tâches" action="action_tache" parent="module_perso_menu_root" sequence="20"/>
+
+        <!-- Parent menu for "Compte de Résultat" -->
+        <menuitem id="menu_static_page_parent" name="Compte de Résultat" parent="module_perso_menu_root" sequence="30"/>
+
+        <!-- Sub-menu for CRN -->
+        <menuitem id="menu_static_page_crn" name="CRN" action="action_crn" parent="menu_static_page_parent" sequence="2"/>
+
+        <!-- Sub-menu for CRN12 -->
+        <menuitem id="menu_static_page_crn12" name="CRN12" action="action_crn12" parent="menu_static_page_parent" sequence="3"/>
+    </data>
+</odoo>

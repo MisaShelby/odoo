@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tache_user,tache.user,model_tache,base.group_user,1,1,1,1
+access_tache_manager,tache.manager,model_tache,base.group_system,1,1,1,1
+access_annee_user,annee.user,model_annee,base.group_user,1,0,0,0
+access_annee_manager,annee.manager,model_annee,base.group_system,1,1,1,1
